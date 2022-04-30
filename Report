@@ -1,3 +1,4 @@
+Base Model:-
 Model1:
 	final train: 0.9217 / Val: 0.9180
 	epoch1: 0.4910 0.7171 
@@ -14,6 +15,7 @@ Model1:
 		Dense: 10, activation='softmax'
 	Optimizers: SGD, lr 0.0001, momentum 0.9, epochs 10, batch size 32
 
+Trying different number of epochs
 Model2:
 	final train: 0.9325 0.9370
 	epoch1: 0.4889 0.6504
@@ -38,6 +40,7 @@ Model3
 	model Arch Same as Model 1
 	Optimizers epochs 20, ...SAME
 	
+Trying diffrent learning_rate
 model4:
 	final train: 0.9959 0.9848  
 	epoch1: 0.9480 0.9790
@@ -71,6 +74,9 @@ model6:
 	Avg epoch time 9s ~ 10s
 	model Arch Same as Model1
 	Optimizers lr 0.01, ...SAME
+
+Trying different architectures
+
 model7:
 	final train: 0.1000 0.9912
 	epoch1: 0.9461 0.9791
@@ -139,6 +145,9 @@ model10:
 		Dense: 32, relu
 		Dense: 10, softmax
 	Optimizers: Same
+
+Trying different batch sizes
+
 model11:
 	final train: 0.9992 0.9902
 	epoch1: 0.9581 0.9838
@@ -161,6 +170,9 @@ model12:
 	Avg epoch time 20s ~ 21s
 	model Arch Same as Model 9
 	Optimizers Batch 64, ...SAME
+	
+Trying different activation functions
+
 model13:
 	final train: 0.9990 0.9906
 	epoch1: 0.9434 0.9766
@@ -201,6 +213,9 @@ model15:
 	Avg epoch time 20s ~ 22s
 	model Arch Same as model 13 but with LeakyRelu
 	Optimizers Same opt3
+
+Trying different optimizers
+
 model16:
 	final train: 0.9822 0.9749
 	epoch1: 0.9517 0.9714 
@@ -223,6 +238,9 @@ model17:
 	Avg epoch time 23s ~ 24s
 	model Arch Same as model 9
 	Optimizers opt5
+
+Trying different dropout rates
+
 model18:
 	final train: 0.9973 0.9908
 	epoch1: 0.9424 0.9779
